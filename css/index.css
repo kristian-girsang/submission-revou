@@ -1,0 +1,244 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #d2ec3a;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+  font-size:larger;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #ffde3d;
+  text-decoration: none;
+}
+
+main {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.welcome { 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.welcome .welcome__title input {
+  margin-left: 0.5rem;
+  flex: 1 1 0%;
+}
+
+.welcome .welcome__title,
+.welcome .welcome__title input {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.facilitation {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+.facilitation__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.facilitation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffde3d;
+}
+
+/* Style untuk form pesan */
+.message-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Style untuk pesan */
+.form-container {
+  width: 45%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.form-container h3 {
+  border: 2px solid #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 20px 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.form-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+.form-container textarea {
+  max-width: 90%;
+  height: 100px;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  background-color: #ffde3d;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #333;
+  color: #ffde3d;
+}
+
+.radio-container label {
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style untuk hasil pesan */
+.result-container {
+  width: 45%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.result-container h3 {
+  border: 2px solid #333;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.result-container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.result-container span {
+  font-weight: bold;
+}
+
+#datetime {
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+/* Style untuk footer */
+footer {
+  background-color: #333;
+  color: #ffde3d;
+  padding: 20px 20px;
+}
+
+.footer .footer__tag {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+}
+

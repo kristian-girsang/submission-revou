@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="header-logo">
+            <img src="assets/logo.svg" alt="logo" />
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/profile.html" class="nav-link">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Achievement</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Message Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h1 class="welcome__title">Hi,<input type="text" id="name" placeholder="tulis nama disini..." /></h1>
+            <h1>Welcome to my website</h1>
+            <p class="welcome__text">This is a submission website by Kristian Girsang</p>
+            <div class="slideshow-container">
+                <img class="banner" src="assets/slide-1.jpg" alt="" />
+                <img class="banner" src="assets/slide-2.jpg" alt="" />
+                <img class="banner" src="assets/slide-3.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="facilitation">
+            <h3 class="facilitation__title">Our facilitation</h3>
+            <ul class="facilitation__list">
+                <li class="list">
+                    <div class="circle"></div>
+                    <h4>Profesional Teacher</h4>
+                </li>
+                <li>
+                    <div class="circle"></div>
+                    <h4>Sport Field</h4>
+                </li>
+                <li>
+                    <div class="circle"></div>
+                    <h4>Classroom</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="message-container">
+            <div class="form-container">
+                <h3>Message us</h3>
+                <form name="message-form" onsubmit="return validateForm()">
+                    <label>Nama:</label>
+                    <input placeholder="Nama" type="text" name="full-name" required />
+                    <br />
+                    <label>Tanggal lahir:</label>
+                    <input type="date" name="birth-date" required />
+                    <br />
+
+                    <label>Jenis kelamin:</label>
+                    <div class="radio-container">
+                        <input type="radio" id="male" name="gender" value="Laki-laki" required />
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan" required />
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <br />
+
+                    <label>Pesan:</label>
+                    <textarea placeholder="Pesan" name="messages" required></textarea>
+                    <br />
+
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+
+            <div class="result-container">
+                <h3>Your message</h3>
+                <div class="message-detail">
+                    <p id="datetime"></p>
+                    <p><strong>Nama:</strong> <span id="sender-full-name"></span></p>
+                    <p><strong>Tanggal lahir:</strong> <span id="sender-birth-date"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="sender-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="sender-messages"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__tag">Created by Kristian Girsang</div>
+    </footer>
+</body>
+
+<script src="/js/index.js"></script>
+
+</html>
